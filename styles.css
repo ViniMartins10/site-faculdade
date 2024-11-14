@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos de fundo animado em tons de azul */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #004e92, #000428, #004e92, #5c7aff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Ajustes para as seções principais */
+header, .contact-section, .docentes-section, .blog-section, .docentes-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    
+}
+
+.logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+}
+
+.left-section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.slider-btn {
+    font-size: 24px; /* Tamanho da seta */
+    padding: 10px; /* Espaçamento interno (aumenta ou diminui conforme necessário) */
+    margin: 0 5px; /* Espaçamento entre os botões, ajuste aqui para aproximar mais */
+    background-color: white; /* Cor de fundo do botão */
+    border: 1px solid #ccc; /* Borda opcional */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+}
+
+/* Centraliza os botões com a imagem */
+.slider {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Ajuste da imagem (caso precise) */
+.slider img {
+    width: 300px; /* Tamanho da imagem */
+    height: auto;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+.right-section {
+    width: 30%;
+    background-color: #0A1931;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-buttons button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-buttons button:hover {
+    background-color: #555;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.left-section {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    transition: all 0.3s ease; /* Adiciona uma transição suave ao trocar de tela */
+}
+
+#description-content h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#description-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#back-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+/* Laboratórios */
+#labs-content {
+    text-align: center;
+}
+
+#labs-content h1 {
+    margin-bottom: 20px;
+}
+
+#labs-content p {
+    margin-top: 20px;
+}
+
+#lab-image {
+    width: 300px;
+    height: auto;
+}
+
+
+/* Grade Curricular */
+#grade-content {
+    text-align: center;
+}
+
+#grade-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#grade-table th, #grade-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#grade-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-align: center;
+}
+
+#grade-table td {
+    text-align: center;
+}
+
+#back-grade-btn{
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#back-labs-btn{
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.slider img, #lab-image {
+    width: 400px; /* Largura padrão para todas as imagens */
+    height: 400px; /* Altura padrão para todas as imagens */
+    object-fit: cover; /* Ajusta a imagem para preencher o contêiner mantendo as proporções */
+    border-radius: 5px; /* Bordas arredondadas para melhorar a estética */
+}
+
+.hidden-right-section {
+    display: none;
+}
+
+.docentes-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.docentes-section h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.docente-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.docente-card h2 {
+    font-size: 22px;
+    color: #0A1931;
+    margin-bottom: 5px;
+}
+
+.docente-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.docente-card strong {
+    color: #333;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+    color: #333;
+}
+.blog-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-section h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.post-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.post-card h2 {
+    font-size: 22px;
+    color: #0A1931;
+    margin-bottom: 5px;
+}
+
+.post-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.post-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.read-more-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.read-more-btn:hover {
+    background-color: #555;
+}
+
+.full-content {
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Estilos do foguete animado */
+.rocket {
+    font-size: 40px; /* Tamanho do foguete */
+    position: fixed;
+    top: 70%; /* Ajusta a posição vertical do foguete */
+    left: -10%; /* Começa fora da tela à esquerda */
+    animation: rocketLaunch 8s linear infinite; /* Animação infinita */
+}
+
+/* Animação do foguete */
+@keyframes rocketLaunch {
+    0% {
+        transform: translate(0, -50%) rotate(45deg); /* Posição inicial, ajusta para centralizar verticalmente */
+    }
+    100% {
+        transform: translate(100vw, -50%) rotate(45deg); /* Sai da tela no canto direito, mantendo a altura */
+    }
+}
+
+.flame {
+    position: fixed;
+    top: 75%; /* Posiciona os fogos um pouco abaixo do foguete */
+    left: 5%; /* Posiciona os fogos perto do foguete */
+    width: 10px; /* Largura do fogo */
+    height: 10px; /* Altura do fogo */
+    background: orange; /* Cor do fogo */
+    border-radius: 50%; /* Forma arredondada */
+    animation: flameAnimation 0.5s ease-in-out infinite; /* Animação dos fogos */
+}
+
+/* Animação dos fogos */
+@keyframes flameAnimation {
+    0% {
+        transform: scale(1) translateY(0); /* Tamanho inicial */
+        opacity: 1; /* Totalmente visível */
+    }
+    50% {
+        transform: scale(1.5) translateY(-10px); /* Aumenta de tamanho e sobe um pouco */
+        opacity: 0.7; /* Levemente transparente */
+    }
+    100% {
+        transform: scale(1) translateY(0); /* Volta ao tamanho original */
+        opacity: 1; /* Totalmente visível */
+    }
+}
+
+
