@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UniFECAF - Docentes</title>
+    <title>Engenharias UniFECAF 2024-2</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -20,18 +19,88 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-            <section class="docentes-section">
-                <h1>Docentes de Engenharia</h1>
-                <div id="docentes-container"></div>
-                <div class="pagination">
-                    <button id="prev-page" disabled>&laquo; Anterior</button>
-                    <span id="page-info">Página 1</span>
-                    <button id="next-page">&raquo; Próxima</button>
-                </div>
-            </section>
-            <script src="/scripts/docentes.js"></script>
-    </main>
+    <h1>Engenharias UniFECAF 2024-2</h1>
+    <div class="professores-lista">
+        <ul>
+            <li><a href="professor.html?id=adison">Adilson Nunes Ferreira de Souza</a></li>
+            <li><a href="professor.html?id=ailton">Ailton Quadrante Freitas</a></li>
+            <li><a href="professor.html?id=alan">Alan Rodrigo Navia</a></li>
+            <li><a href="professor.html?id=ancelmo">Ancelmo do Nascimento</a></li>
+            <li><a href="professor.html?id=anderson">Anderson Novaes do Santos</a></li>
+            <li><a href="professor.html?id=andre">André Buono Silveira</a></li>
+            <li><a href="professor.html?id=andreluis">Andre Luis Souza Santiago</a></li>
+            <li><a href="professor.html?id=bruno">Bruno Moisés Rufino Baptista</a></li>
+            <li><a href="professor.html?id=carlos">Carlos Eduardo da Silva Fontoura</a></li>
+            <li><a href="professor.html?id=daniel">Daniel Castro Santos </a></li>
+            <li><a href="professor.html?id=fabio">Fábio Alves Larsen</a></li>
+            <li><a href="professor.html?id=francisco">Francisco Jose Dias Junior</a></li>
+            <li><a href="professor.html?id=isabella">Isabella Narciso</a></li>
+            <li><a href="professor.html?id=luiz">Luiz Antônio do Nascimento</a></li>
+            <li><a href="professor.html?id=odair">Odair Fernandes de Souza</a></li>
+            <li><a href="professor.html?id=pedro">Pedro Guimarães Muniz</a></li>
+            <li><a href="professor.html?id=rafaela">Rafaela da Silva Pinto</a></li>
+            <li><a href="professor.html?id=roberto">Roberto Eduardo Bruzetti Leminsk</a></li>
+            <li><a href="professor.html?id=simone">Simone Aparecida Alves Pinto</a></li>
+        </ul>
+    </div>
 </body>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1b41;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #00e676;
+}
+
+.professores-lista ul {
+    list-style: none;
+    padding: 0;
+}
+
+.professores-lista li {
+    margin: 10px 0;
+}
+
+.professores-lista a {
+    color: #00e676;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.professor-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #2c2f58;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#foto-professor {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00e676;
+    text-decoration: none;
+}
+
+</style>
 </html>
+
+
+
+
+
+
